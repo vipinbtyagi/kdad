@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2018-11-06T11:57:01.925-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/pheaa-project/settings/wcm/templates/pheaa-home-page-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="pheaa-project/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <header
+                jcr:created="{Date}2018-10-03T18:00:21.135-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-11-01T14:01:31.993-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="pheaa-project/components/structure/header"
+                displayAs="green"
+                type="green">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        width="12"/>
+                </cq:responsive>
+                <products jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        path="#"
+                        product="Home"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        path="#"
+                        product="Lone"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        path="#"
+                        product="Payments"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        path="#"
+                        product="Planning"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        path="#"
+                        product="Help"/>
+                </products>
+                <stylefield jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        btstyle="glyphicon glyphicon-envelope"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        btstyle="glyphicon glyphicon-user"/>
+                </stylefield>
+            </header>
+            <responsivegrid
+                jcr:created="{Date}2018-10-31T22:35:25.138-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-10-31T22:35:25.138-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        width="6"/>
+                    <phone
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="6"/>
+                </cq:responsive>
+            </responsivegrid>
+            <responsivegrid_2064412256
+                jcr:created="{Date}2018-11-01T11:45:55.968-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-11-01T11:45:55.968-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid_2064412256>
+            <responsivegrid_310653145
+                jcr:created="{Date}2018-11-01T11:46:08.721-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-11-01T11:46:08.721-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid_310653145>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}650"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

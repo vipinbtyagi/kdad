@@ -1,0 +1,94 @@
+<section class="text-center">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-4"><!--piechart-->
+					<div class="piechart" data-value="20" data-size="220" data-bar-width="8" data-color="#3498db">
+						<span class="piechart__text  h6  alt-font">Skill</span>
+					</div>
+					<p>Convert put together the cutting-edge technologies in order to provide a stunning experience for your clients.</p>
+				</div>
+
+				<div class="col-sm-4"><!--piechart-->
+					<div class="piechart" data-value="50" data-size="220" data-bar-width="8" data-color="#3498db">
+						<span class="piechart__text  h6  alt-font">Passion</span>
+					</div>
+					<p>Convert put together the cutting-edge technologies in order to provide a stunning experience for your clients.</p>
+				</div>
+
+				<div class="col-sm-4"><!--piechart-->
+					<div class="piechart" data-value="80" data-size="220" data-bar-width="8" data-color="#3498db">
+						<span class="piechart__text  h6  alt-font">Energy</span>
+					</div>
+					<p>Convert put together the cutting-edge technologies in order to provide a stunning experience for your clients.</p>
+				</div>
+
+			</div><!--end row-->
+		</div><!--end container-->
+	</section>
+
+
+<style>
+.piechart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+</style>
+
+<script>
+// Canvas element forms the gradient background
+			granimParent.prepend('<canvas id="'+granimID+'"></canvas>');
+
+            // Regular expression to match comma separated list of hex colour values
+            passes = /^(#[0-9|a-f|A-F]{6}){1}([ ]*,[ ]*#[0-9|a-f|A-F]{6})*$/.test(colours);
+
+            if(passes === true){
+            	colours = colours.replace(' ','');
+            	colours = colours.split(',');
+            	count = colours.length;
+            	// If number of colours is odd - duplicate last colour to make even array
+            	if(count%2 !== 0){
+            		colours.push(colours[count-1]);
+            	}
+            	for(i = 0; i < (count/2); i++){
+                    tempPair = [];
+                    tempPair.push(colours.shift());
+                    tempPair.push(colours.shift());
+                    pairs.push(tempPair);
+            	}
+                
+                // attribute overrides - allows per-gradient override of global options.
+                ao.states = {
+                    "default-state": {
+                        gradients: pairs
+                    }
+                }
+            }
+
+            themeDefaults = {
+                element: '#'+granimID,
+                name: 'basic-gradient',
+                direction: 'left-right',
+                opacity: [1, 1],
+                isPausedWhenNotInView: true,
+                states : {
+                    "default-state": {
+                        gradients: pairs
+                    }
+                }
+            };
+            
+            options = jQuery.extend({}, themeDefaults, ip.granim.options, ao);
+            $(this).data('gradientOptions', options);
+    		var granimElement = $(this);
+    		var granimInstance = new Granim(options);
+    	}); 
+	}
+
+	ip.components.documentReadyDeferred.push(ip.granim.documentReady);
+	return ip;
+}(ip, window, document, jQuery));
+
+</script>

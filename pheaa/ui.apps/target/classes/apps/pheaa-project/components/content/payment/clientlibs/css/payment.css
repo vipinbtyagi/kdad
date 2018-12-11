@@ -1,0 +1,38 @@
+.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.right{
+    float:right;
+    padding-right: 25px;
+}
+.left{
+    float:left;
+    padding-left: 25px;
+    text-align:left;
+}
+.title{
+    font-size: 12px;
+    font-weight: bold;
+    text-align:left;
+}
+.dynamic{
+    font-size: 18px;
+}
+.static{
+	font-size: 8px;
+}
+.link{
+	font-size: 8px;
+    font-weight: bold;
+	color: green;
+    padding-right: 0px
+}

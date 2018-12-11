@@ -1,0 +1,34 @@
+<div class="container" ng-module="updatesActionsApp" ng-controller="updatesActionsController">
+  <div class="col-md-4 col-xl-4">
+		<div class="card review-task">
+			<div class="card-header">
+				<div class="card-header-left">
+				<h5>Updates & Actions</h5>
+				</div>
+			</div>
+			<div class="card-block " >
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<tbody>
+						<tr ng-repeat="obj in data | limitTo:4">
+								<td>
+									 {{obj.id}}<br>
+									month
+								</td>
+								<td>
+                					<h6>{{obj.body}}</h6><br>
+									<b>{{obj.title}}</b>
+								</td>
+								<td style="width:8px">
+									 <a href="#">
+											<span class="glyphicon glyphicon-chevron-right"></span>
+									 </a>
+								</td>
+						</tr>		
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

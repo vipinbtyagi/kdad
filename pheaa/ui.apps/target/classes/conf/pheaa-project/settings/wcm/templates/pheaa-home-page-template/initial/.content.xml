@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/pheaa-project/settings/wcm/templates/pheaa-home-page-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="pheaa-project/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2018-10-03T17:52:41.677-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-10-03T17:58:13.751-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_2064412256
+                jcr:created="{Date}2018-11-01T11:45:55.968-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-11-01T12:54:45.693-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+        </root>
+    </jcr:content>
+</jcr:root>

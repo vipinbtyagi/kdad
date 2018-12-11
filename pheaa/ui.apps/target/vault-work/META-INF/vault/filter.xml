@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/pheaa-project" />
+    <filter root="/apps/sling/servlet/errorhandler" />
+    <filter root="/conf/pheaa-project" mode="merge" />
+    <filter root="/etc/clientlibs/pheaa-project" />
+    <filter root="/etc/packages/adobe/consulting/acs-aem-commons-content-3.14.10.zip" />
+</workspaceFilter>

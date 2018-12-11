@@ -1,0 +1,6 @@
+/com.adobe.acs.commons.errorpagehandler.impl.ErrorPageHandlerImpl.xml
+/com.adobe.acs.commons.wcm.impl.DesignReferenceProvider.xml
+/com.adobe.acs.commons.wcm.impl.PagesReferenceProvider.xml
+/com.adobe.granite.workflow.purge.Scheduler-dam.xml
+/com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-pheaa-project.xml
+/.gitignore

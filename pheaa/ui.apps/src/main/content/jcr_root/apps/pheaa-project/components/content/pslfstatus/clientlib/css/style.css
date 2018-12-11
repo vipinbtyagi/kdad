@@ -1,0 +1,12 @@
+.padd{
+    padding: 25px;
+}
+.title{
+    padding-top: 25px;
+    padding-right: 25px;
+}
+ .status{
+    padding-bottom: 25px;
+    padding-right: 25px;
+    font-size: 12px; 
+    }

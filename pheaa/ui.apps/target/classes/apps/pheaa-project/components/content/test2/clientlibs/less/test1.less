@@ -1,0 +1,22 @@
+.class1 {
+   .class2 {
+      .val(@param) {
+         font-size: @param;
+         color:green;
+      }
+      .val2(@param) {
+      &:extend(.style);
+
+      }
+     .style{
+       background:~"green";
+    }
+
+   }
+
+}
+
+.myclass {
+   .class1 > .class2 > .val(20px);
+     .class1 > .class2 > .val2(20px);
+}

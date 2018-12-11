@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Pheaa Project Content Package</comment>
+<entry key="createdBy">vipin</entry>
+<entry key="name">pheaa.ui.apps</entry>
+<entry key="acHandling">merge_preserve</entry>
+<entry key="created">2018-12-07T10:50:07.994-0500</entry>
+<entry key="groupId">com.pheaa</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">pheaa-packages</entry>
+<entry key="description">Maven Multimodule project for Pheaa Project.</entry>
+<entry key="artifactId">pheaa.ui.apps</entry>
+<entry key="path">/etc/packages/pheaa-packages/pheaa.ui.apps.zip</entry>
+</properties>

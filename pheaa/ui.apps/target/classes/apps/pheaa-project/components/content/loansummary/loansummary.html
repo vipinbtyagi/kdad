@@ -1,0 +1,141 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.css @ categories='pheaa.lonesummary'}" />
+<sly data-sly-use.loneObj="com.pheaa.components.content.LoneSummary"></sly>
+
+<div data-sly-test.blueVal="${loneObj.getBlueValue}" data-sly-unwrap></div>
+<div data-sly-test.greenVal="${loneObj.getgreenValue}" data-sly-unwrap></div>
+<div data-sly-test.title1="${properties.title1?properties.title1 : 'blankValue'}"></div>
+<div data-sly-test.title2="${properties.title2?properties.title2 : 'blankValue'}"></div>
+<div data-sly-test.title3="${properties.title3?properties.title3 : 'blankValue'}"></div>
+<div data-sly-test.title4="${properties.title4?properties.title4 : 'blankValue'}"></div>
+<div data-sly-test.title5="${properties.title5?properties.title5 : 'blankValue'}"></div>
+
+<div class="lonsummary">
+	<div class="topContent1">
+		<div data-sly-call="${i18 @ key='lonesummary'}" data-sly-unwrap></div>
+	</div>
+	<div class="topContent2">
+		<div data-sly-call="${i18 @ key='enrolledingraduated'}"
+			data-sly-unwrap></div>
+	</div>
+	<div class="topContent3">
+		
+		<div data-sly-call="${i18 @ key='year'}" data-sly-unwrap></div>
+		
+
+	</div>
+	<div class="topContent4">
+		<div data-sly-call="${i18 @ key='total'}" data-sly-unwrap></div>
+	</div>
+	<br />
+	<hr />
+	<br>
+	<div class="balance">
+		<p> <div data-sly-call="${getValues2 @ keyVal=title1,paidPerVal=loneObj.paidPer,linkItemValue=properties.linkItem1,i18Val='yourbalance'}"></div> </p>
+	</div>
+	<canvas id="myCanvas"
+		style="width: 100%; height: 10px; background: #cdcdcd;"></canvas>
+        <canvas id="myCanvast"></canvas>
+
+		
+</div>
+<div class="botomContent">
+	<div class="topContent5">
+	  <div data-sly-call="${getValues @ keyVal=title2,paidPerVal=loneObj.getPaidValue,linkItemValue=properties.linkItem2,i18Val='paidof'}"></div>
+	</div>
+	<div class="topContent6">
+		<p>
+		<div data-sly-call="${getValues @ keyVal=title3,paidPerVal=loneObj.getLoneValue,linkItemValue=properties.linkItem3,i18Val='lonebalance'}"></div>
+		<!-- 	$ ${loneObj.getLoneValue}<br>
+		<div data-sly-call="${i18 @ key='lonebalance'}" data-sly-unwrap></div> -->
+		</p>
+	</div>
+</div>
+<div class="totalCalculation">
+<div data-sly-test.linkitem4="${properties.linkItem4}" data-sly-unwrap>
+        <p>
+      
+      <div data-sly-test.titleValue1="${title4 =='blankValue'}" data-sly-unwrap>
+         <span class="dot"></span><div data-sly-call="${i18 @ key='principlebalance'}" data-sly-unwrap></div>
+        </div>
+        <div data-sly-test.titleValue1="${title4 !='blankValue'}" data-sly-unwrap>
+           <span class="dot"></span> ${title4}
+        </div>
+           $ ${loneObj.getBalance}
+        
+        </p>
+	</div>
+	<!-- <div data-sly-test.blueVal="${properties.linkItem2}" data-sly-unwrap>  -->
+	<div data-sly-test.linkitem5="${properties.linkItem5}" data-sly-unwrap>
+			<p>
+			 <div data-sly-test.titleValue1="${title5 =='blankValue'}" data-sly-unwrap>
+			      <span class="dot2"></span><div data-sly-call="${i18 @ key='interestbalance'}" data-sly-unwrap></div>
+				$ ${loneObj.getBalance} + ${loneObj.getTnteresAmount} =
+				${loneObj.getTobePaid}
+				<div data-sly-call="${i18 @ key='tobepaid'}" data-sly-unwrap></div>
+			</div>
+			<div data-sly-test.titleValue1="${title5 !='blankValue'}" data-sly-unwrap>
+			       <span class="dot2"></span> ${title5}
+				$ ${loneObj.getBalance} + ${loneObj.getTnteresAmount} =
+				${loneObj.getTobePaid}
+				<div data-sly-call="${i18 @ key='tobepaid'}" data-sly-unwrap></div>
+			</div>
+			</p>
+	</div>		
+	</div>
+</div>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+     var bval = ${blueVal @ context='scriptToken'};
+    ctx.fillStyle = "blue";
+    ctx.fillRect(0,10,bval,150);
+
+    var canvas2 = document.getElementById("myCanvas");
+    var ctx2 = canvas2.getContext("2d");
+     var gval = ${greenVal @ context='scriptToken'};
+    ctx2.fillStyle = "green";
+    ctx2.fillRect(0,10,gval,150);
+
+
+var canvas3 = document.getElementById("myCanvas");
+    var ctx3 = canvas3.getContext("2d");
+     var bval = ${greenVal @ context='scriptToken'};
+    ctx3.beginPath();
+ctx3.moveTo(bval, 50);
+ctx3.lineTo(bval, 200);
+
+ctx.stroke();
+
+</script>
+<template data-sly-template.i18="${@ key}"> ${key @ i18n} </template>
+<template data-sly-template.getValues="${@ keyVal,paidPerVal,linkItemValue,i18Val}"> 
+
+  <div data-sly-test.linkitem1="${linkItemValue}" data-sly-unwrap>
+			
+			    $ ${paidPerVal}<br />
+			 <div data-sly-test.titleValue11="${keyVal=='blankValue'}" data-sly-unwrap>
+			      <div data-sly-call="${i18 @ key=i18Val}" data-sly-unwrap></div>
+			</div>
+			 <div data-sly-test.titleValue111="${keyVal!='blankValue'}" data-sly-unwrap>
+				  ${keyVal}
+			</div> 
+			
+	</div> 
+    
+ </template> 
+ <template data-sly-template.getValues2="${@ keyVal,paidPerVal,linkItemValue,i18Val}"> 
+
+  <div data-sly-test.linkitem1="${linkItemValue}" data-sly-unwrap>
+			
+			     ${paidPerVal} %<br />
+			 <div data-sly-test.titleValue11="${keyVal=='blankValue'}" data-sly-unwrap>
+			      <div data-sly-call="${i18 @ key=i18Val}" data-sly-unwrap></div>
+			</div>
+			 <div data-sly-test.titleValue111="${keyVal!='blankValue'}" data-sly-unwrap>
+				  ${keyVal}
+			</div> 
+			
+	</div> 
+    
+ </template> 

@@ -1,0 +1,25 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.all @ categories='pheaa.structure'}" />
+<sly data-sly-use.bgcolor="com.pheaa.components.content.DropwonComponent"></sly>
+<sly data-sly-use.styles="com.pheaa.components.content.MultiField"></sly>
+  <div data-sly-test.bgname="background:${bgcolor.getType};" data-sly-unwrap></div>
+        <nav class="navbar navbar-default" style="${bgname @ context='styleString'};">
+      <div class="container-fluid">
+
+            <sly data-sly-use.listUse="${'readmultifield.js' @ multifieldName='products'}" data-sly-unwrap> 
+              <ul class="nav navbar-nav" data-sly-list="${listUse}">
+
+                  <li><a href="${item.properties.path}">${item.properties.product}</a></li>
+              </ul>
+            </sly>
+            <ul class="nav navbar-nav navbar-right">
+
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> <div data-sly-call="${i18 @ key='inbox'}" data-sly-unwrap></div></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> <div data-sly-call="${i18 @ key='profile'}"data-sly-unwrap></div></a></li>
+   			 </ul>
+      </div> 
+</nav>
+<template data-sly-template.i18="${@ key}">
+ ${key @ i18n}
+</template>
+

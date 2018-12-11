@@ -1,0 +1,17 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.css @ categories='pheaa.selectforyou'}" />
+<div class="selectfor-you">
+<div class="row">
+  <div class="selectforyou-column1">
+    <img src="${properties.icon ? properties.icon : 'Hi'}" />
+  </div>
+  <div class="selectforyou-column2">
+   <spam><b>${properties.heading ? properties.heading : 'Phea Content'}</b></spam>
+   <p>${properties.desc ? properties.desc : 'Phea Content Discription'}</p>
+  </div>
+   <div class="selectforyou-column3">
+     <spam style="color:green">${properties.buttonLabel ? properties.buttonLabel : '>'}</spam>
+
+  </div>
+</div>
+</div>

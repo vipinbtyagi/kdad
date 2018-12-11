@@ -1,0 +1,9 @@
+<footer class="pheaa_footer">
+ <sly data-sly-use.heroImage="com.pheaa.components.content.HeroImage">
+  <p>${properties.heading}</p>
+      <figure>
+          <img src="${(properties.fileReference || properties.fileName) ? heroImage.image.src : ''}" alt="Trulli" style="width:30%">
+          <figcaption>${properties.title}</figcaption>
+    </figure>
+</sly>
+</footer>

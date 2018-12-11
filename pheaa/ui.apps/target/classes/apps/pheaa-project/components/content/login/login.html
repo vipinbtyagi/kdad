@@ -1,0 +1,24 @@
+
+<form class="form-signin">
+
+ 
+	<h4 class="form-signin-heading"><small>${properties.subheading || "Please enter sub heading"}</small></h4>
+ 
+        <label for="inputEmail" class="sr-only">${properties.subheading}</label>
+        <input type="TEXT" id="userId" class="form-control" placeholder="User Name" required autofocus>
+        <label for="inputPassword" class="">${properties.pass}</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+		<!-- <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me" id="rememberMe"> Remember me
+          </label>
+        </div> -->
+        <br/> <br/>
+
+        <button class="btn btn-lg btn-primary btn-block" id="loginButton" >${properties.btn}</button>
+
+		<div id="errordiv"></div>
+
+        <span><input type="hidden" id="url" value= "${pageProperties.homePagePath}/j_security_check" /></span>
+      </form>

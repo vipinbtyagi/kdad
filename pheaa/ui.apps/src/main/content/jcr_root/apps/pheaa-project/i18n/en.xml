@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="nt:folder">
+    <Enrolled_x0020_In_x0020_Graduated
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="enrolledingraduated"
+        sling:message="Enrolled In Graduated"/>
+    <inbox
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="inbox"
+        sling:message="Inbox"/>
+    <Interest_x0020_Balance
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="interestbalance"
+        sling:message="Interest Balance"/>
+    <Lone_x0020_Balance
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="lonebalance"
+        sling:message="Loan Balance"/>
+    <Lone_x0020_Summary
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="lonesummary"
+        sling:message="Loan Summary"/>
+    <paidof
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="paidof"
+        sling:message="Paid as of Jun 28"/>
+    <Principle_x0020_Balance
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="principlebalance"
+        sling:message="Principle Balance"/>
+    <profile
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="profile"
+        sling:message="Profile"/>
+    <to_x0020_be_x0020_paid
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="tobepaid"
+        sling:message="to be paid"/>
+    <Total
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="total"
+        sling:message="Total"/>
+    <year
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="year"
+        sling:message="year"/>
+    <Your_x0020_Balance
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="yourbalance"
+        sling:message="Your Balance"/>
+</jcr:root>

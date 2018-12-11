@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="col-md-6 col-xl-5" data-sly-use.multiItems="com.pheaa.components.content.MultiField">
+		<div class="card review-task">
+			<div class="card-header">
+				<div class="card-header-left">
+				<h5>Additional Options</h5><!--TODO make this authorable -->
+				</div>
+			</div>
+			<div class="card-block" >
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<tbody  data-sly-list.head="${multiItems.fieldsets.listChildren}">
+						<tr>
+								<td>
+									<a href="#!"><img class="img-rounded" src="${head.image}"></a>
+								</td>
+								<td>
+									<h6>${head.title}</h6>
+									<p class="text-muted"> ${head.description}</p>
+								</td>
+								<td style="width:8px">
+									 <a href="#">
+											<span class="glyphicon glyphicon-chevron-right"></span>
+									 </a>
+								</td>
+
+						</tr>		
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

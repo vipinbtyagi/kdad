@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1544197800061
+Build-Jdk: 1.8.0_131
+Built-By: vipin
+Bundle-Description: Maven Multimodule project for Pheaa Project.
+Bundle-ManifestVersion: 2
+Bundle-Name: Pheaa Project Bundle
+Bundle-SymbolicName: com.pheaa.pheaa
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.pheaa.components.commons;version="0.0.1",com.pheaa.c
+ omponents.content;uses:="com.adobe.cq.sightly,javax.inject,org.apache.s
+ ling.api.resource,org.apache.sling.models.annotations,org.slf4j";versio
+ n="0.0.1",com.pheaa.components.contentTest;version="0.0.1"
+Import-Package: com.adobe.cq.sightly;version="[3.2,4)",javax.inject,org.
+ apache.jackrabbit.util;version="[2.4,3)",org.apache.sling.api;version="
+ [2.3,3)",org.apache.sling.api.resource;version="[2.10,3)",org.apache.sl
+ ing.models.annotations;version="[1.5,2)",org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.3.0.201609221906

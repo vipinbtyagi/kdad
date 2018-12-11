@@ -1,0 +1,28 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.css @ categories='pheaa.setupAutoplay'}" />
+<div class="setautoplay-you">
+<div class="row">
+  <div class="setautoplay-column">
+    <spam><b>${properties.heading ? properties.heading : 'Phea Content'}</b></spam>
+  </div>
+  <div class="setautoplay-column">
+    <spam style="color:green">${properties.buttonLabel ? properties.buttonLabel : '>'}</spam>
+  </div>
+
+</div>
+<div class = "setautoplay">
+<hr/>
+</div>
+<div class="row">
+  <div class="setautoplay-column1">
+    <img src="${properties.icon ? properties.icon : 'Hi'}" />
+  </div>
+  <div class="setautoplay-column2">
+   <p>${properties.desc ? properties.desc : 'Phea Content Discription'}</p>
+  </div>
+   <div class="setautoplay-column3">
+    <h2></h2>
+    
+  </div>
+</div>
+</div>
